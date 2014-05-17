@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 This Code Book will try to explain the data structure of this repo.  As the project
 is to gather and rearrange data from an existing data set.  I will try to provide a
@@ -7,7 +7,7 @@ files is in the source data set.  Then more details on the new data frames gener
 in this project.
 
 
-## Data Source and its structures
+# Data Source and its structures
 
 The source data is provided by instructor in a zip file as below:
 
@@ -16,7 +16,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Once download and extracted, all data is stored in a folder "UCI HAR Dataset" with couple sub-folders
 named test and train (there is another sub-folder under each of these folders but no use for this project).
 
-# For the data files stored under the main folder "UCI HAR Dataset"
+## For the data files stored under the main folder "UCI HAR Dataset"
 Files in this folder:
 *  README.txt:	with a overview of how and what data is collected in the data set.
 *  feature_info.txt:	explanation of the collected data.
@@ -26,7 +26,7 @@ Files in this folder:
 This project will extract data from "feature.txt" to label the variables in the new data frames.  We will
 also use the "activity_labels.txt" data to assign descriptive activity name to our new data frames.
 
-# Data files stored under the sub-folder "test" and "train"
+## Data files stored under the sub-folder "test" and "train"
 The file structure in this two sub-folders are exactly the same, only the data are gathered through two different
 group of subjects (the volunteers).  Files in these folder are:
 *  X_test.txt / X_train.txt:	The main data set with all measurement results
@@ -34,7 +34,7 @@ group of subjects (the volunteers).  Files in these folder are:
 *  subject_test.txt / subject_train.txt:	The subject (volunteer) id for the corresponding measurement data
 
 
-## Work and transformation done on the source data
+# Work and transformation done on the source data
 
 1.  As to create a complete set of data with meaningful and proper column names, following works is done:
     * the X_test.txt, y_test.txt and subject_test.txt are merged together to form a complete data set for
