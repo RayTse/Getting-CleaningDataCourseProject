@@ -10,9 +10,11 @@ The source data is provided by instructor in a zip file as below:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
+The code book file "CodeBook.md" in this repo will explain the detailed data structure.
+
 For the programmed script, run_analysis.R, it assumes:
 
-1.  The data file is download to your R working directory and extracted into sub-forder: "UCI HAR Dataset"
+1.  The data file is download to your R working directory and extracted into sub-folder: "UCI HAR Dataset"
 
 2.  Library "plyr" is downloaded and installed.  Needed for data frame merging functionality
 
@@ -27,7 +29,7 @@ The name of the script file is run_analysis.R.  It will perform the following ta
 	as well merge with corresponding subject_id and activity_name as the top 2 columns.
 	All columns are properly labelled with descriptive names.
 
-        The final result will be output to file: complete_set.csv
+        The finished data frame was saved in file: complete_set.csv
 
 2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
 
@@ -51,5 +53,18 @@ Due to the size limit with GitHub, the three output files was zipped in "outputs
 uploaded to this repo.  
 
 Full details of the processing are clearly commented in the run_analysis.R script file.
+
+
+### How to run the script
+
+1.  If you have not installed plyr library before, install it with command: 
+        install.packages("plyr")
+
+2.  Make sure the source data is saved and extracted to your working directory
+
+3.  Load the script with command: 
+        source("run_analysis.R")
+	And the script will create the 3 out files in your working directory.
+
 
 Thank you.

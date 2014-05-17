@@ -3,13 +3,10 @@ library(plyr)
 
 
 # read in the features.txt file for using as meaningful column names in dataset
-features <- read.table("UCI HAR Dataset\\features.txt",sep = "\n",colClasses="character")
-col_titles <- features$V1
-# remove the leading numbers in the features list
-col_titles <- gsub("*. "," ",col_titles)
-col_titles <- gsub("*. "," ",col_titles)
-col_titles <- gsub("*. ","",col_titles)
-col_titles <- gsub(" ","",col_titles)
+features <- read.table("UCI HAR Dataset\\features.txt", sep = " ", quote = "", colClasses = "character")
+col_titles <- features$V2
+# remove the tailing quote in the some features names
+col_titles <- gsub("\"","",col_titles)
 # amend the col_titles vector to include the subject and activity ids
 col_titles <- c("subject_id", "activity_code", col_titles)
 
