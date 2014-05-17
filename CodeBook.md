@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 This Code Book will try to explain the data structure of this repo.  As the project
 is to gather and rearrange data from an existing data set.  I will try to provide a
@@ -7,7 +7,7 @@ files is in the source data set.  Then more details on the new data frames gener
 in this project.
 
 
-### Data Source and its structures
+## Data Source and its structures
 
 The source data is provided by instructor in a zip file as below:
 
@@ -34,7 +34,7 @@ group of subjects (the volunteers).  Files in these folder are:
 *  subject_test.txt / subject_train.txt:	The subject (volunteer) id for the corresponding measurement data
 
 
-### Work and transformation done on the source data
+## Work and transformation done on the source data
 
 1.  As to create a complete set of data with meaningful and proper column names, following works is done:
     * the X_test.txt, y_test.txt and subject_test.txt are merged together to form a complete data set for
@@ -54,22 +54,22 @@ aggregate() function filter by subject_id and activity_name.  This final data se
 and was exported as "averages.csv".
 
 
-### Data structure of resulting data frames
+## Data structure of resulting data frames
 
-# complete_set: contains 563 columns with
+### complete_set: contains 563 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 561 columns are the actual data from X_test.txt / X_train.txt.  The proper column names are assigned
     for each of these variables and their meaning can be reference back to the source data documents feature_info.txt
     and feature.txt.
 
-# mean_std: contains 68 columns with
+### mean_std: contains 68 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 66 columns are the actual data from X_test.txt / X_train.txt where column name contains either
     "mean()" or "std()" for mean and standard deviation measurements.
 
-# average: contains 563 columns with
+### average: contains 563 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 561 columns are the mean value of corresponding column from the complete_set data which is a subset 
