@@ -28,12 +28,26 @@ The name of the script file is run_analysis.R.  It will perform the following ta
 	as well merge with corresponding subject_id and activity_name as the top 2 columns.
         All columns will be labelled properly with descriptive names
 
-        The final result will be output to a complete_set.csv file as attached in this repo.
+        The final result will be output to file: complete_set.csv
 
 2.  Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-        This subset data is extracted by the script and saved as mean_std.csv.
+        The data frame "mean_std" contains all data fields where its column name contain mean()
+        or std().  The key column of subject_id and activity_name is also retained in this data
+        frame.
+
+        The finished data frame was saved in file: mean_std.csv
 
 3.  An independent tidy data set with the average of each variable for each activity and each 
-    subject was extracted and saved as averages.csv.
+    subject.
+
+        The data frame "averages" was extracted from the complete_set data frame using aggregate()
+        function with key field subject_id and activity_names as factors, compute by function mean().
+        Then the resulting data frame was sorted by key field subject_id and activity_name for easy
+        reading.
+
+        The final data frame was saved in file: averages.csv
+
+Due to the size limit with GitHub, the three output files was zipped together as "outputs.zip" in the 
+repo.  Full details of the script is clearly commented in the run_analysis.R file.
 
