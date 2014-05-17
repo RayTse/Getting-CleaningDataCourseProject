@@ -69,7 +69,7 @@ and was exported as "averages.csv".
     * the rest 66 columns are the actual data from X_test.txt / X_train.txt where column name contains either
     "mean()" or "std()" for mean and standard deviation measurements.
 
-### average: contains 563 columns with
+### averages: contains 563 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 561 columns are the mean value of corresponding column from the complete_set data which is a subset 
