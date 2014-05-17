@@ -56,20 +56,20 @@ and was exported as "averages.csv".
 
 ## Data structure of resulting data frames
 
-### complete_set: contains 563 columns with
+### complete_set: contains 10299 rows and 563 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 561 columns are the actual data from X_test.txt / X_train.txt.  The proper column names are assigned
     for each of these variables and their meaning can be reference back to the source data documents feature_info.txt
     and feature.txt.
 
-### mean_std: contains 68 columns with
+### mean_std: contains 10299 rows and 68 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 66 columns are the actual data from X_test.txt / X_train.txt where column name contains either
     "mean()" or "std()" for mean and standard deviation measurements.
 
-### averages: contains 563 columns with
+### averages: contains 180 rows and 563 columns with
     * 1st column: subject_id - the identifier for the volunteer
     * 2nd column: activity_name - the activity taken when the data is collected
     * the rest 561 columns are the mean value of corresponding column from the complete_set data which is a subset 
