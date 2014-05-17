@@ -52,7 +52,7 @@ The name of the script file is run_analysis.R.  It will perform the following ta
 Due to the size limit with GitHub, the three output files was zipped in "outputs.zip" and 
 uploaded to this repo.  
 
-Full details of the processing are clearly commented in the run_analysis.R script file.
+Full details of on the work and process are carefully commented in the "run_analysis.R" script file.
 
 
 ### How to run the script
