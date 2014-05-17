@@ -8,7 +8,7 @@ tidy data that can be used for later analysis.
 
 The source data is provided by instructor in a zip file as below:
 
-(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 For the programmed script, it assumes:
 
